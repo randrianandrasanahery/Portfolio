@@ -8,7 +8,8 @@
    <link rel="stylesheet" href="./styles/index.css">
    <link rel="stylesheet" href="./styles/scrolbar.css">
    <link rel="stylesheet" href="./styles/about.css">
-   <script src="./script/index.js"></script>
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <script src="./script/index.js" defer></script>
 </head>
 <body>
    <div id="header">
@@ -44,17 +45,16 @@
             </div>
             <div class="second_colone">
                <h1 class="text_about">About Me</h1>
-               <p style="color: white;">En cliquant sur l'un de ces liens , vous redirigez vers mes <br>
+               <p>En cliquant sur l'un de ces liens , vous redirigez vers mes <br>
                compétences ,mes études et mes soft skills </p>
 
                <div class="link">
-                  <a href="#competences" class="active_link"  >Compétences</a>
-                  <a href="#education" class="education" >Education</a>
-                  <a href="#experiences" class="experience">Expériences</a>
+                  <p class="link_nav active_nav" onclick="opentab('competence')">Competence</p>
+                  <p class="link_nav" onclick="opentab('education')">Education</p>
+                  <p class="link_nav" onclick="opentab('experience')">Experience</p>
                </div>
 
-               <div class="link_contente">
-                  <div class="link_competence active">
+               <div class="link_contente active_list" id="competence">
                      <ul>
                         <i class="titre">Langage de programmation</i>
                         <li class="html"> <i> <img src="./logo_tech/html.png" alt=""></i> HTML5 / CSS3</li>
@@ -74,17 +74,13 @@
                      </ul>
                   </div>
 
-                  <div class="education">
+                  <div class="link_contente" id="education">
                      <ul>
-                        <li><span>L3 en Informatique</span>2023 - en cours</li>
-                        <li><span>BACC serie D</span> Lycée Ambohimanarina</li>
-                        <li><span>CERTIFICAT EN DESIGN</span> Orange Digital Center</li>
+                        <li><span>L3 in Computer Science</span> 2023 - en cours...</li>
+                        <li><span>Bachelor's degree</span> Lycée Ambohimanarina</li>
+                        <li><span>Certificate in design </span> Orange Digital Center</li>
                      </ul>
                   </div>
-
-
-
-               </div>
             </div>
          </div>
       </div>
