@@ -11,10 +11,11 @@
 
  
 #service{
+    border-top: 1px solid var(--color_primary);
     padding-top: 40px;
     width: 100%;
-    height: 80vh;
-    background-color: var(--color_bgc);
+    height: 90vh;
+    /* background-color: var(--color_bgc); */
     
 }
 
@@ -22,8 +23,13 @@
     padding: 10px 30px;
     position: relative;
     width: 85%;
+    height: 75vh;
     margin: auto;
     text-align: center;
+    background-color: var(--color_bgc);
+    align-items: center;
+    vertical-align:middle;
+   
 }
  
 .container_service .title{
@@ -31,6 +37,7 @@
     font-size: 50px;
     font-weight: 900;
     float: left;
+    /* text-shadow: 0 0 1rem var(--color_second); */
 }
 
 .container_service .service_list{
@@ -53,6 +60,7 @@
     border-left: 3px solid var(--color_add1);
     border-radius: 10px;
     color: rgb(36, 36, 36);
+    position: relative;
 }
 
 .service_list div:hover{
@@ -66,7 +74,20 @@
 }
 
 .service_list div a{
-    color: hsl(208, 92%, 24%);
+    width: 100px;
+    position: absolute;
+    bottom: 10px;
+    right: 35%;
+    color: var(--color_black);
+    background:transparent;
+    border: 2px solid var(--color_primary);
+    border-radius: 4px;
+    /* text-shadow: 0 0 1rem var(--color_second); */
+    box-shadow: 0 0 1rem var(--color_second);
+}
+.service_list div a:hover{
+    color: var(--color_white);
+
 }
 
 .container_service a i{
@@ -76,4 +97,10 @@
     position: absolute;
     bottom: -80px;
     color: rgb(169, 16, 16);
+}
+
+.service_list div .fa-solid{
+    font-size: x-large;
+    margin-bottom: 10px;
+    /* background-color: #b43737; */
 }

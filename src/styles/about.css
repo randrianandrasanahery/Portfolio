@@ -20,7 +20,8 @@
    min-height: 100vh;
 }
 
-.row{
+
+.container{
    
    display: flex;
    justify-content: space-between;
@@ -176,7 +177,10 @@ ul li i img{
    height: 16px;
 }
 .link_contente ul li:hover{
-   background-color: var(--color_second);
+   background-color: var(--color_primary);
+   box-shadow: 0 0 1rem var(--color_white);
+   border-radius: 10px;
+   padding: 5px;
 }
 
 
