@@ -30,16 +30,16 @@ body{
    padding: 10px 30px;
    position: relative;
    width: 100%;
+   justify-content: center;
 }
 
 nav{
+   width: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
-   flex-wrap: wrap;
+   /* flex-wrap: wrap; */
    border-bottom: 1px solid var(--color_bgc);
-
-   /* backdrop-filter: ; */
   
 }
 
@@ -103,6 +103,7 @@ nav ul li a.active{
 
 .header_text h1{
    font-size: 40px;
+   font-weight: 800;
 
 }
 
@@ -116,10 +117,15 @@ nav ul li a.active{
 .header_text p:last-child{
    background-color: hsl(0, 87%, 51%);
    width: 200px;
-   text-align: center;
+   height: 25px;
    border-radius: 10px;
    color: aliceblue;
    font-size: 15px;
+   margin-top: 20px;
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   font-style:italic;
 }
 
 .header_text h1 span{
@@ -127,8 +133,20 @@ nav ul li a.active{
    font-size: 50px;
 }
 
-.header_text h1{
-   font-weight: 800;
+.header_text  div {
+   margin-top: 20 px;
+   /* background-color: #08798d; */
+}
+
+.header_text a{
+   font-size: 30px;
+   color:#2485b9;
+   margin-right: 10px;
+}
+
+.header_text a:hover i{
+   text-shadow:0 0 1rem hsl(201, 67%, 43%);
+   color: #060504;
 }
 
 
