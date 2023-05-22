@@ -1,4 +1,14 @@
 
+:root{
+   --color_primary:hsl(187, 92%, 19%);
+   --color_second:rgb(56, 210, 210);
+   --color_add1:hsl(57, 69%, 50%);
+   --color_add2:hsl(164, 82%, 18%);
+   --color_black:hsl(0, 0%, 0%);
+   --color_white:hsl(0, 0%, 100%);
+   --color_bgc:hsl(210, 7%, 12%);
+}
+
 
 #about{
    padding: 80px 20px;
@@ -32,14 +42,14 @@
 }
 .second_colone{
    flex-basis: 60%;
-   background-color:#1c1e20;
+   background-color:var(--color_bgc);
    border-radius: 5px;
    padding-left: 20px;
-   color: white;
+   color:var(--color_white);
 }
 
 .text_about{
-   color: #04535e;
+   color: var(--color_primary);
    font-size: 50px;
 }
 
@@ -47,7 +57,7 @@
 .premier_colone{
    width: 500px;
    height: 500px;
-   background-color: #1c1e20;
+   background-color: var(--color_bgc);
    border-radius: 5px;
    background-image: url('../images/hery.png');
    background-position: top center;
@@ -55,12 +65,12 @@
    background-size:cover;
 }
 
-.second_colone p{
-   margin-top: 40px;
-}
+
 
 .second_colone p{
+   margin-top: 40px;
    font-weight: 800;
+   font-size: large;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -74,12 +84,12 @@
    margin-right: 20px;
     /* background-color: #04535e; */
    border-radius: 5px;
-   color: rgb(56, 210, 210);
+   color: var(--color_second);
    position: relative;
 }
 
 .link p:hover{
-   color: rgb(215, 207, 39);
+   color: var(--color_add1);
 }
 
 .link p::after{
@@ -102,15 +112,16 @@
    width: 50%;
 }
 .link p.active_nav{
-   color: rgb(210, 157, 10);
+   color: var(--color_add1);
 }
 
 .link_contente{
-   width: 400px;
+   width: 500px;
    margin-top: 30px;
    flex-wrap: wrap;
    display: none;
    justify-content: space-between;
+   /* background-color: #fff; */
 }
 
 .link_contente.active_list{
@@ -124,24 +135,27 @@
 .link_contente ul li{
    list-style: none;
    margin:15px 15px;
-   color: aliceblue;
+   color:var(--color_white);
    position: relative;
-   background-color: #04535e;
+   
    border-radius: 3px;
    padding: right 20px;;
    padding-top: 2px;
+   width:100%;
 }
 
 
 .link_contente ul li span{
-   color:red;
-   padding-right: 30px;
+   color:var(--color_second);
+   padding-right: 40px;
+   font-weight: 500;
+   font-family: Arial, Helvetica, sans-serif ;
 }
 
 
 
 .link_contente ul i{
-   color: rgb(235, 211, 88);
+   color: var(--color_add1);
    font-size: 13px;
 }
 
@@ -155,14 +169,14 @@ ul li i img{
    height: 12px;
 }
 
-.link_contente ul li:hover i{
-   background-color: rgb(235, 211, 88);
+.link_contente ul li i:hover img {
+   background-color: var(--color_add1);
    border-radius: 4px;
+   width: 16px;
+   height: 16px;
 }
 .link_contente ul li:hover{
-   background-color: azure;
-   color: #04535e;
-   font-weight: 800;
+   background-color: var(--color_second);
 }
 
 

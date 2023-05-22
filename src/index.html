@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="./styles/index.css">
    <link rel="stylesheet" href="./styles/scrolbar.css">
    <link rel="stylesheet" href="./styles/about.css">
+   <link rel="stylesheet" href="./styles/service.css">
    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
    <script src="./script/index.js" defer></script>
 </head>
@@ -17,18 +18,18 @@
          <nav>
             <h1> <strong>T</strong>anjona</h1>
             <ul>
-               <li><a href="#" class="par_defaut">HOME</a></li>
-               <li><a href="#about">ABOUT</a></li>
-               <li><a href="#portfolio">PORTFOLIO</a></li>
+               <li><a href="#" class="active" id="home" onclick="opentab('home')">HOME</a></li>
+               <li><a href="#about" >ABOUT</a></li>
+               <li><a href="#travail">PROJET</a></li>
                <li><a href="#service">SERVICES</a></li>
                <li><a href="#contact">CONTACT</a></li>
             </ul>
          </nav>
          <div class="sous_container">
             <div class="header_text">
-               <p> DEVELOPPEUR and DESIGNER </p>
-               <h1> Hi, I'm <span>Hery Tanjona</span>  <br> from Madagascar, passionate about web developement  and design</h1>
-               <p class="bienvenue p">Welcome to my web site.</p>
+               <p> DEVELOPPEUR et DESIGER </p>
+               <h1> Bonjour, je suis  <span>Hery Tanjona</span>  <br> de nationalité Malgache, passionné pour la développement web et design</h1>
+               <p class="bienvenue p">Bienvenue sur ma page.</p>
             </div>
                <div class="image"></div>
          </div>
@@ -36,7 +37,7 @@
       </div>
    </div>
 
-<!-- About  -->
+   <!--                                          About  -->
    <div id="about">
       <div class="container">
          <div class="row">
@@ -44,14 +45,14 @@
                <div class="sary"></div>
             </div>
             <div class="second_colone">
-               <h1 class="text_about">About Me</h1>
+               <h1 class="text_about"> À propos</h1>
                <p>En cliquant sur l'un de ces liens , vous redirigez vers mes <br>
                compétences ,mes études et mes soft skills </p>
 
                <div class="link">
-                  <p class="link_nav active_nav" onclick="opentab('competence')">Competence</p>
+                  <p class="link_nav active_nav" onclick="opentab('competence')">Compétence</p>
                   <p class="link_nav" onclick="opentab('education')">Education</p>
-                  <p class="link_nav" onclick="opentab('experience')">Experience</p>
+                  <p class="link_nav" onclick="opentab('experience')">Expérience</p>
                </div>
 
                <div class="link_contente active_list" id="competence">
@@ -65,36 +66,81 @@
                      </ul>
    
                      <ul>
-                        <i class="titre">autres....</i>
+                        <i class="titre">other....</i>
                         <li class="html"> <i> <img src="./logo_tech/photoshop.png" alt=""></i> PHOTOSHOP</li>
                         <li class="javascrip"> <i> <img src="./logo_tech/illustrator.png" alt=""></i> ILLUSTRATOR</li>
                         <li class="python"> <i><img src="./logo_tech/figma.png" alt=""></i> FIGMA</li>
                         <li class="php"> <i><img src="./logo_tech/react.png" alt=""></i> REACTJS</li>
-                        <li class="c"> <i><img src="./logo_tech/c.png" alt=""></i> C</li>
+                        <li class="c"> <i><img src="./logo_tech/c.png" alt=""></i> Vuejs3</li>
                      </ul>
                   </div>
 
                   <div class="link_contente" id="education">
                      <ul>
-                        <li><span>L3 in Computer Science</span> 2023 - en cours...</li>
-                        <li><span>Bachelor's degree</span> Lycée Ambohimanarina</li>
-                        <li><span>Certificate in design </span> Orange Digital Center</li>
+                        <li><span>L3 en Informatique</span> <br> 2023 - en cours...</li>
+                        <li><span>Certificat en Design </span> <br>Fevrier 2022 - Orange Digital Center</li>
+                        <li><span>Bacc</span> <br> 2019 - Lycée Ambohimanarina</li>
+                     </ul>
+                  </div>
+
+                  <div class="link_contente" id="experience" >
+                     <ul>
+                        <li><span>Developpeur web</span> <br>Avril 2023 - IMD Malagasy mahonby</li>
+                        <li><span>Designer et graphiste</span> <br>Novembre 2022 - ACEP madagascar</li>
+                        <li><span>Formation en introduction in design </span> <br> Fevrier 2022 - Orange digital center</li>
                      </ul>
                   </div>
             </div>
+
+
          </div>
       </div>
 
-      <!-- portfolio -->
-      <div id="portfolio"></div>
-
-      <!-- service -->
-      <div id="service"></div>
-
-      <!-- contact -->
-
-      <div id="contact"></div>
    </div>
+
+
+
+   <!-- service -->
+
+   <div id="service">
+      <div class="container_service">
+         <h1 class="title"> My services</h1>
+
+         <div class="service_list">
+            <div>
+               <i>sary</i>
+               <h2>Developpement web</h2>
+               <p>Je peux vous créer un site web dynamique ou statique selon votre demande , mes téchnologie sont déjà mentionnés si dessus. <br>
+               merci de me contacter si vous interéssez  </p>
+               <a href="#">Plus d'info</a>
+            </div>
+
+            <div>
+               <i>sary</i>
+               <h2>UI/UX design</h2>
+               <p> Dans le monde de la design vous pouvez aussi compter sur moi pour bien présenter votre visuel graphique , que ce soit pour écran ou affiche.
+                  <br> merci de me contacter si vous interéssez
+               </p>
+                  <a href="#">Plus d'info</a>
+            </div>
+
+            <div>
+               <i>sary</i>
+               <h2>Reseaux and Maintenance</h2>
+               <p>Pour le côté Hardware , j'ai des compétences sur cette domaine méme si je suis autodidacte pour ettudier cela. 
+               
+                  Contactez moi si je vous êtres utile.
+               </p>
+               <a href="#">Plus d'info</a>
+            </div>
+         </div>
+
+         <a href="#header"><i>^</i></a>
+
+      </div>
+   </div>
+   <!-- contact -->
+
    
 </body>
 </html>  

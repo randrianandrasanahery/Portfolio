@@ -1,0 +1,79 @@
+
+:root{
+    --color_primary:hsl(187, 92%, 19%);
+    --color_second:rgb(56, 210, 210);
+    --color_add1:hsl(57, 69%, 50%);
+    --color_add2:hsl(164, 82%, 18%);
+    --color_black:hsl(0, 0%, 0%);
+    --color_white:hsl(0, 0%, 100%);
+    --color_bgc:hsl(210, 7%, 12%);
+ }
+
+ 
+#service{
+    padding-top: 40px;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--color_bgc);
+    
+}
+
+.container_service{
+    padding: 10px 30px;
+    position: relative;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+ 
+.container_service .title{
+    color: var(--color_primary);
+    font-size: 50px;
+    font-weight: 900;
+    float: left;
+}
+
+.container_service .service_list{
+    width: 90%;
+    height: 50vh;
+    margin-top: 20px;
+    margin: auto;
+    /* background-color: var(--color_white); */
+    display: flex;
+    align-items: center;
+
+}
+
+.service_list div{
+    height: 250px;
+    width: 400px;
+    margin-left: 15px;
+    background-color: var(--color_white);
+    padding: 20px;
+    border-left: 3px solid var(--color_add1);
+    border-radius: 10px;
+    color: rgb(36, 36, 36);
+}
+
+.service_list div:hover{
+    background:linear-gradient(120deg, var(--color_primary ) 30%, var(--color_second ));
+    color: var(--color_white);
+    border-left: 3px solid var(--color_white);
+}
+
+.service_list h2{
+    color: var(--color_add1);
+}
+
+.service_list div a{
+    color: hsl(208, 92%, 24%);
+}
+
+.container_service a i{
+    font-size: xx-large;
+    /* background-color: #fff; */
+    font-weight: 100;
+    position: absolute;
+    bottom: -80px;
+    color: rgb(169, 16, 16);
+}
