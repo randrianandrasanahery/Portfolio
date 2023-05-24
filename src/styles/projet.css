@@ -1,0 +1,18 @@
+#projet{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color_bgc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color_white);
+}
+
+.design, .web{
+    width: 45%;
+    height: 70vh;
+    /* background-color: var(--color_add1); */
+    margin-right: 10px;
+    border: 1px solid var(--color_add1);
+}
+

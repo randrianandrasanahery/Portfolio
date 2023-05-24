@@ -1,7 +1,5 @@
 var link_lists = document.getElementsByClassName('link_nav');
 var link_contents = document.getElementsByClassName('link_contente');
-
-
 /**
  * 
  * @param {string} tablink
@@ -22,5 +20,23 @@ function opentab(tablink){
    document.getElementById(tablink).classList.add("active_list")
 }
 
+
+// demo ecriture text 
+
+var i = 0
+const text = "DEVELOPPEUR WEB ET DESIGNER";
+const nom = "HERY TANJONA"
+const speed = 100;
+
+function writeText(){
+   if((i < text.length) || (i< nom.length)){
+      document.getElementById('demo_text').innerHTML += text.charAt(i);
+      document.getElementById("demo_nom").innerHTML += nom.charAt(i);
+      i++;
+      setTimeout(writeText, speed)
+   }
+}
+
+writeText()
 
 

@@ -140,11 +140,13 @@
    margin:15px 15px;
    color:var(--color_white);
    position: relative;
-   
-   border-radius: 3px;
    padding: right 20px;;
    padding-top: 2px;
    width:100%;
+   display: flex;
+   align-items: center;
+   justify-content: left;
+ 
 }
 
 
@@ -182,7 +184,7 @@ ul li i img{
    background-color: var(--color_primary);
    box-shadow: 0 0 1rem var(--color_white);
    border-radius: 10px;
-   padding: 5px;
+   
 }
 
 

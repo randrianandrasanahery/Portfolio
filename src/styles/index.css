@@ -20,9 +20,9 @@ body{
    position: relative;
    width: 100%;
    height: 100vh;
-   background-position: center;
+   background-position: cover;
    background-image: url('../images/homecolourful.svg');
-   background-size: cover;
+   background-size: center;
    background-repeat: no-repeat;
 }
 
@@ -88,11 +88,12 @@ nav ul li a.active{
 /* debut style de lading page */
 
 .sous_container{
-   display: flex;
    padding: 0 80px;
    position: relative;
    width: 100%;
    justify-content: center;
+   display: flex;
+   align-items: center;
 }
 .header_text{
    margin-top: 200px;
@@ -115,16 +116,13 @@ nav ul li a.active{
 }
 
 .header_text p:last-child{
-   background-color: hsl(0, 87%, 51%);
    width: 200px;
    height: 25px;
    border-radius: 10px;
-   color: aliceblue;
-   font-size: 15px;
-   margin-top: 20px;
+   font-size: 12px;
+   margin-top: 5px;
    align-items: center;
-   display: flex;
-   justify-content: center;
+   display: flex; 
    font-style:italic;
 }
 
@@ -157,10 +155,15 @@ nav ul li a.active{
    border-radius: 30px;
    margin-left: 40px;
    margin-top:100px;
-   background-image: url('../images/tanjona.png');
-   background-position:top center;
-   background-repeat: no-repeat;
-   background-size:380px;
+   overflow-y: hidden;
+   position: relative;
+
+}
+
+.image img{
+   width: 400px;
+   height: auto;
+   
 }
 
 
