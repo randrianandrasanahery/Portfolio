@@ -39,4 +39,30 @@ function writeText(){
 
 writeText()
 
+function message(){
+   alert("Serveur côté front_end  pas de back_end")
 
+}
+
+//  change background navbar quand on scroll
+
+function changeBackground(){
+   var navbar = document.getElementById("navbar");
+   var scrollvalleur = window.scrollY;
+
+   if(scrollvalleur < 50){
+      navbar.classList.remove("changeBg")
+   }else{
+      navbar.classList.add("changeBg")
+   }
+}
+
+window.addEventListener('scroll', changeBackground)
+
+function activeMenu(){
+   var clas = document.querySelectorAll('#navi')
+   for(element of clas){
+      element.classList.remove('active')
+   }
+   event.currentTarget.classList.add("active");
+}

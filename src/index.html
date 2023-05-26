@@ -23,14 +23,14 @@
 <body>
    <div id="header">
       <div class="container">
-         <nav>
+         <nav id="navbar">
             <h1> <strong>T</strong>anjona</h1>
             <ul>
-               <li><a href="#home" id="home">HOME</a></li>
-               <li><a href="#about">ABOUT</a></li>
-               <li><a href="#projet">PROJET</a></li>
-               <li><a href="#service">SERVICES</a></li>
-               <li><a href="#contact">CONTACT</a></li>
+               <li><a href="#home" id="navi" class="active" onclick="activeMenu()">HOME</a></li>
+               <li><a href="#about" id="navi" onclick="activeMenu()">ABOUT</a></li>
+               <li><a href="#projet" id="navi" onclick="activeMenu()">PROJET</a></li>
+               <li><a href="#service" id="navi" onclick="activeMenu()">SERVICES</a></li>
+               <li><a href="#contact" id="navi" onclick="activeMenu()">CONTACT</a></li>
             </ul>
          </nav>
          <div class="sous_container">
@@ -171,7 +171,7 @@
       <h1 class="title"> <i class="fa-solid fa-address-book"></i> CONTACT</h1>
       <div class="container_contact">
 
-         <div class="information">
+         <div class="contact_information">
             <div class="case">
                <div class="icone">
                   <i class="fa-regular fa-envelope"></i>
@@ -198,25 +198,64 @@
                </div>
                <div class="info">
                   <h3>Adresse</h3>
-                  <p>Lot IVL 4k Ambodivonikely</p>
+                  <p>Lot IVL 4k Ambodivonikely Ambohimanarina</p>
                </div>
             </div>
             <div class="case">
                <div class="icone">
-                  <i class="fa-regular fa-envelope"></i>
+                  <i class="fa-solid fa-city"></i>
                </div>
                <div class="info">
-                  <h3>Adresse</h3>
-                  <p>randrianandrasanaherytanjona@gmail.com</p>
+                  <h3>Ville</h3>
+                  <p>Antananarivo 101</p>
                </div>
             </div>
          </div>
+         
+         <div class="icon">
 
-         <div class="message">
+            <ul>
+              
+               <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+               <li><a href="https://www.facebook.com/tanjona.hery" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/hery-tanjona-randrianandrasana-716b06235/"><i
+                  class="fa-brands fa-linkedin"></i></a></li>
+               <li><a href="https://github.com/randrianandrasanahery" target="_blank"><i
+                  class="fa-brands fa-github"></i></a></li>
+            </ul>
+            
+            
+            
+         </div>
+
+         <div class="contact_message">
+          
+            <fieldset>
+               <legend>Envoyer un message</legend>
+               <div class="input_message">
+                  <input type="text" name="nom" id="nom"  required>
+                  <span>Nom complet</span>
+               </div>
+               <div class="input_message">
+                  <input type="text" name="nom" id="nom" required>
+                  <span>Email</span>
+               </div>
+               <div class="input_message">
+                  <textarea required="obligatoire" ></textarea>
+                  <span>Ecris votre message...</span>
+               </div>
+               <div class="input_message">
+                  <input type="submit" value="Envoyer" onclick="message()">
+               </div>
+            </fieldset>
 
          </div>
+
       </div>
    </div>
+
+
 </body>
 
 </html>
