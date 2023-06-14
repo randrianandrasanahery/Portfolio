@@ -31,6 +31,7 @@
     padding: 10vh 40px;
     color: var(--color_white);
     overflow:hidden;
+
 }
 /* 
 .contact_info_containte{
@@ -73,6 +74,8 @@ fieldset{
     height: 43vh;
     /* background: var(--color_add1); */
     padding: 20px 30px;
+    box-shadow: 0 0 1rem rgba(249, 249, 249, 0.2);
+    border-radius: 4px;
 }
 fieldset legend{
     font-size: large;

@@ -38,6 +38,7 @@
     color: var(--color_primary);
     font-size: 50px;
     font-weight: 900;
+    margin-top: 20px;
 }
 /* text-shadow: 0 0 1rem var(--color_second);
 
@@ -86,6 +87,8 @@
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
     border-radius: 0 0 5px 5px;
+    display: none;
+
     /* border-radius: topleft, topright, bottomrihgt, bottomleft */
 }
 
@@ -94,7 +97,17 @@
 }
 
 
+.container_service .dev:hover .text,
+.container_service .designe:hover .text,
+.container_service .maintenance:hover .text{
+    display: block;
+    border-top: 2px solid var(--color_add1);
+    border-radius: 5px;
+}
 
-
-
+.container_service .dev:hover,
+.container_service .designe:hover,
+.container_service .maintenance:hover{
+    border: 2px solid var(--color_second);
+}
 
